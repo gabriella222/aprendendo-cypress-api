@@ -17,7 +17,6 @@ describe('DELETE Books', () => {
         })
 
     });
-    
     it('Criar e excluir um livro', () => {
 
         POSTBooks.addBook().then((resAddBooks)=>{
