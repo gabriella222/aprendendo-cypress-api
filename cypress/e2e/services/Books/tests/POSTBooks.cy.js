@@ -1,0 +1,16 @@
+import * as POSTBooks from '../requests/POSTBooks.request.js'
+
+describe('POST Books', () => {
+
+    it('Adicionar um novo livro', () => {
+        
+        POSTBooks.addBook().should((response)=>{
+
+            expect(response.status).to.equal(200);
+            expect(response.body.Title).to.equal("Livro sobre")
+
+
+        })
+    });
+    
+});
