@@ -1,6 +1,6 @@
 
 
-const payloadAddBook = require('../payloads/add-books.json')
+const payloadUpdateBook = require('../payloads/update-books.json')
 
 function updateBook(idBook) {
     
@@ -12,8 +12,7 @@ function updateBook(idBook) {
             'Content-Type': 'application/json'
         },
         failOnStatusCode: false,
-        body: payloadAddBook.Title('Outro livro')
-
+        body: payloadUpdateBook
 
     })
 }
